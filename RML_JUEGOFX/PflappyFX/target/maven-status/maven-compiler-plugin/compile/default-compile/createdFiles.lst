@@ -1,0 +1,4 @@
+module-info.class
+com\pflappy\Pflappyfx\SecondaryController.class
+com\pflappy\Pflappyfx\PrimaryController.class
+com\pflappy\Pflappyfx\App.class

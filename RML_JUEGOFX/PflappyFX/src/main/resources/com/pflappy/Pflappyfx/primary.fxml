@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.pflappy.Pflappyfx.PrimaryController">
+
+    <children>
+
+        <!-- FONDO -->
+        <ImageView fx:id="backgroundImg"
+                   fitWidth="600"
+                   fitHeight="400"
+                   preserveRatio="false"
+                   AnchorPane.topAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0"/>
+
+        <!-- CONTENIDO CENTRADO -->
+        <VBox spacing="20"
+              alignment="CENTER"
+              AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0">
+
+            <Label text="PFLAPPY"
+                   style="-fx-font-size:48; -fx-text-fill:black; -fx-font-weight:bold;"/>
+
+            <Button text="JUGAR"
+                    prefWidth="200"
+                    prefHeight="50"
+                    onAction="#onPlay"
+                    style="-fx-font-size:18;"/>
+
+            <Button text="SALIR"
+                    prefWidth="200"
+                    prefHeight="50"
+                    onAction="#onExit"
+                    style="-fx-font-size:18;"/>
+
+        </VBox>
+
+    </children>
+</AnchorPane>
